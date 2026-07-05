@@ -200,7 +200,7 @@ spec:
               echo "DB is ready!"
       containers:
         - name: backend
-          image: ghcr.io/alisuhaibdev/Jerney/jerney-backend:5944f5f
+          image: ghcr.io/alisuhaibdev/jerney/jerney-backend:5944f5f
           ports:
             - containerPort: 5000
               protocol: TCP
@@ -307,7 +307,7 @@ spec:
           effect: "NoSchedule"
       containers:
         - name: frontend
-          image: ghcr.io/alisuhaibdev/Jerney/jerney-frontend:5944f5f
+          image: ghcr.io/alisuhaibdev/jerney/jerney-frontend:5944f5f
           ports:
             - containerPort: 8080
               protocol: TCP
@@ -354,7 +354,7 @@ metadata:
     app.kubernetes.io/part-of: jerney
     app.kubernetes.io/component: frontend
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app.kubernetes.io/name: jerney-frontend
   ports:
