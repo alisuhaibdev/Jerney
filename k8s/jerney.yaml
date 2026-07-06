@@ -308,6 +308,7 @@ spec:
       containers:
         - name: frontend
           image: ghcr.io/alisuhaibdev/jerney/jerney-frontend:8eb2d0a
+          command: ["wrong-command"]
           ports:
             - containerPort: 8080
               protocol: TCP
