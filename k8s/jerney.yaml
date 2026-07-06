@@ -356,7 +356,7 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    app.kubernetes.io/name: jerney-frontend
+    app.kubernetes.io/name: jerney-frontend1
   ports:
     - port: 80
       targetPort: 8080102
