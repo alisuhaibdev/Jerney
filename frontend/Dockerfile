@@ -1,5 +1,5 @@
 # ---- Build stage ----
-FROM node:wrong-version
+FROM node:20-alpine AS build
 WORKDIR /app
 COPY package.json package-lock.json* ./
 RUN npm ci && npm cache clean --force
