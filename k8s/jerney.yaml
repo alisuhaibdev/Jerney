@@ -208,7 +208,7 @@ spec:
             - name: PORT
               value: "5000"
             - name: DB_HOST
-              value: "jerney-db"
+              value: "jerney-db1"
             - name: DB_PORT
               value: "5432"
             - name: DB_USER
